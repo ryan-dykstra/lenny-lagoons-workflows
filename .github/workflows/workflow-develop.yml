@@ -1,0 +1,13 @@
+name: Reusable workflow example
+
+on:
+  workflow_call:
+  workflow_dispatch: 
+
+jobs:
+  example_job:
+    name: My example_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Environment Variables
+        run: env
